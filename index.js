@@ -19,9 +19,7 @@ module.exports = (ips, exclusions) => {
 	// to match against
 	var excludedIps = exclusions
 			.map(exclude => wildcard(exclude, ips))
-			.reduce((a, b) => {
-				return a.concat(b);
-			});
+			.reduce((a, b) => a.concat(b));
 
 	return ips.filter(ip => {
 		return excludedIps.indexOf(ip) < 0;
