@@ -1,0 +1,31 @@
+{
+  "name": "filter-ips",
+  "version": "0.0.0",
+  "description": "My gnarly module",
+  "license": "MIT",
+  "repository": "brh55/filter-ips",
+  "author": {
+    "name": "Brandon Him",
+    "email": "brh55@drexel.edu",
+    "url": "github.com/brh55"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "wildcard": "^1.1.2"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.0"
+  }
+}
