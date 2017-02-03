@@ -3,15 +3,15 @@ const wildcard = require('wildcard');
 
 module.exports = (ips, exclusions) => {
 	if (!Array.isArray(ips)) {
-		throw TypeError('Expecting ips argument to be type of array');
+		throw new TypeError('Expecting ips argument to be type of array');
 	}
 
 	exclusions = exclusions || [];
 	if (!Array.isArray(exclusions)) {
 		if (typeof exclusions === 'string') {
-			exclusions = [ exclusions ];
+			exclusions = [exclusions];
 		} else {
-			throw TypeError('Expecting exclusions argument to be type of array or string');
+			throw new TypeError('Expecting exclusions argument to be type of array or string');
 		}
 	}
 
@@ -24,6 +24,6 @@ module.exports = (ips, exclusions) => {
 			});
 
 	return ips.filter(ip => {
-	 	return excludedIps.indexOf(ip) < 0;
+		return excludedIps.indexOf(ip) < 0;
 	});
-}
+};
