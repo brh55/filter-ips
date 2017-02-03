@@ -1,8 +1,8 @@
 # filter-ips [![Build Status](https://img.shields.io/travis/brh55/filter-ips.svg?style=flat-square)](https://travis-ci.org/brh55/filter-ips) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
 
-> Filter a list of IPv4 addresess based on a list of exclusion ips or addresses containing wildcards.
+> Filter a list of IPv4 addresses based on a list of exclusion IPs or addresses containing wildcards.
 >
-> filterIps([], []) => []
+> filterIps(['1.2.3.4', '1.2.3.5', '1.2.4.5'], '1.2.3.*') => ['1.2.4.5']
 
 
 ## Install
