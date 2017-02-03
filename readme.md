@@ -2,7 +2,7 @@
 
 > Filter a list of IPv4 addresses based on a list of exclusion IPs or addresses containing wildcards.
 >
-> filterIps(['1.2.3.4', '1.2.3.5', '1.2.4.5'], '1.2.3.*') => ['1.2.4.5']
+> **filterIps(['1.2.3.4', '1.2.3.5', '1.2.4.5'], '1.2.3.*') => ['1.2.4.5']**
 
 
 ## Install
@@ -41,6 +41,8 @@ filterIps(ips, exclusions);
 ## API
 
 ### filterIps(ips, exclusions)
+
+*Returns a new array of filtered ips*
 
 #### ips
 
