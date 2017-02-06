@@ -1,6 +1,6 @@
 {
   "name": "filter-ips",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Filter a list of IPv4 addresess based on a list of exclusion ips or addresses containing wildcards.",
   "license": "MIT",
   "repository": "brh55/filter-ips",
