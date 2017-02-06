@@ -7,6 +7,11 @@ module.exports = (ips, exclusions) => {
 	}
 
 	exclusions = exclusions || [];
+
+	if (exclusions.length === 0) {
+		return ips;
+	}
+
 	if (!Array.isArray(exclusions)) {
 		if (typeof exclusions === 'string') {
 			exclusions = [exclusions];

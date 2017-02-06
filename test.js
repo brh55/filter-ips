@@ -35,6 +35,10 @@ test('Test all wildcards', t => {
 	t.deepEqual(fn(ips, '*.*.*.*'), [], 'Remove all ips');
 });
 
+test('Test empty exclusions', t => {
+	t.deepEqual(fn(ips), ips, 'Exclude nothing');
+});
+
 test('Test multiple exclusions', t => {
 	t.deepEqual(
 		fn(ips, ['*.*.*.1', '*.*.*.240', '10.255.233.*']),
